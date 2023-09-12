@@ -1,0 +1,146 @@
+{
+  "15roulate": {
+    "admin": {
+      "LpYEOcaMTGSJMXvyRWWUXBhKyHz1": {
+        "id": "LpYEOcaMTGSJMXvyRWWUXBhKyHz1",
+        "role": "admin"
+      }
+    },
+    "agents": {
+      "NABIVtAhNASs7ykbtMyJrGPSxzk2": {
+        "admin": "LpYEOcaMTGSJMXvyRWWUXBhKyHz1",
+        "blocked": false,
+        "commision": 10,
+        "credit": 10,
+        "distributor": "",
+        "email": "amaclestudio@outlook.comdesagg",
+        "id": "NABIVtAhNASs7ykbtMyJrGPSxzk2",
+        "mode": "high",
+        "name": "amaclestudio@outlook.comdes",
+        "request": "0",
+        "role": "agent",
+        "username": "amaclestudio@outlook.comdes"
+      },
+      "onBOsYEEHdTOEkEsy3xLD50zDIs2": {
+        "admin": "LpYEOcaMTGSJMXvyRWWUXBhKyHz1",
+        "blocked": false,
+        "commision": 2569,
+        "credit": 6525,
+        "distributor": "",
+        "email": "asdfads@akjsd.akjsdsssssfdsf",
+        "id": "onBOsYEEHdTOEkEsy3xLD50zDIs2",
+        "mode": "high",
+        "name": "asdf",
+        "request": "0",
+        "role": "agent",
+        "username": "asdf"
+      }
+    },
+    "distributors": {
+      "5nA0Fjszy5fFVsQzKMW1ur9Zi253": {
+        "admin": "LpYEOcaMTGSJMXvyRWWUXBhKyHz1",
+        "blocked": false,
+        "commision": "0",
+        "credit": "0",
+        "email": "a@b.comdddd",
+        "id": "5nA0Fjszy5fFVsQzKMW1ur9Zi253",
+        "mode": "high",
+        "name": "a@b.comdddd",
+        "request": "0",
+        "role": "distributor",
+        "username": "a@b.comsdfsad"
+      },
+      "HY6EChDryZd59epn9TJvFmQIeHl1": {
+        "admin": "LpYEOcaMTGSJMXvyRWWUXBhKyHz1",
+        "blocked": false,
+        "commision": "0",
+        "credit": "0",
+        "email": "12112172@lpu.com2302562dfg",
+        "id": "HY6EChDryZd59epn9TJvFmQIeHl1",
+        "mode": "high",
+        "name": "12112172@lpu.com2302562",
+        "request": "0",
+        "role": "distributor",
+        "username": "12112172@lpu.com2302562"
+      },
+      "RAuQU8FFisglMqu3UPi2BmpGm793": {
+        "admin": "LpYEOcaMTGSJMXvyRWWUXBhKyHz1",
+        "blocked": false,
+        "commision": "0",
+        "credit": "0",
+        "email": "amaclestudio@outlook.comdes",
+        "id": "RAuQU8FFisglMqu3UPi2BmpGm793",
+        "mode": "high",
+        "name": "amaclestudio@outlook.com",
+        "request": "0",
+        "role": "distributor",
+        "username": "amaclestudio@outlook.comdes"
+      },
+      "ussS8FhJxTVFCy2zL80QFi4xVAJ3": {
+        "admin": "LpYEOcaMTGSJMXvyRWWUXBhKyHz1",
+        "blocked": false,
+        "commision": "0",
+        "credit": "0",
+        "email": "amaclestudio@outlook.com",
+        "id": "ussS8FhJxTVFCy2zL80QFi4xVAJ3",
+        "mode": "high",
+        "name": "amaclestudio@outlook.com",
+        "request": "0",
+        "role": "distributor",
+        "username": "fasdfasdf"
+      }
+    },
+    "funtarget": {
+      "Bet": {
+        "lcG13BXOYzMjscYaj4AscaZhTdH2": [
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          200,
+          100
+        ]
+      }
+    },
+    "users": {
+      "C1qYEhHus8eolXg9EBL8OKyerEx2": {
+        "admin": "LpYEOcaMTGSJMXvyRWWUXBhKyHz1",
+        "agentId": "NABIVtAhNASs7ykbtMyJrGPSxzk2",
+        "balance": "0",
+        "blocked": false,
+        "distributor": "",
+        "email": "12112172@lpu.comasdfadsgfasdfgsdg",
+        "id": "C1qYEhHus8eolXg9EBL8OKyerEx2",
+        "request": "0",
+        "username": "12112172@lpu.comasdfadsgf",
+        "withdrawl": "0"
+      },
+      "lcG13BXOYzMjscYaj4AscaZhTdH2": {
+        "balance": 998900
+      }
+    }
+  },
+  "earning": 91,
+  "earningPercentage": 10,
+  "last10data": [
+    "kataj",
+    "commissionc",
+    "kataj",
+    "kataj",
+    "commissionc",
+    "commissionc",
+    "commissionc",
+    "kata",
+    "kata",
+    "kata"
+  ],
+  "result": "chapa",
+  "standing": 489,
+  "timer": {
+    "time": 1694527380425
+  }
+}
