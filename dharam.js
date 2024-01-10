@@ -11,7 +11,7 @@ admin.initializeApp({
 const db = admin.database();
 const ref = db.ref('timer/time');
 const standingRef = db.ref('standing');
-const resultRef = db.ref('result');
+const resultRef = db.ref('resultdharam');
 const betRef = db.ref('funtarget/bet');
 
 const determineWinningNumber = async (sumBets) => {

@@ -1,0 +1,2 @@
+* * * * * export PATH=~/.nvm/versions/node/v20.6.1/bin:$PATH && /home/u592321381/sandeepheadtail_node/check_and_restart.sh >> 
+/home/u592321381/sandeepheadtail_node/logfile.log 2>&1

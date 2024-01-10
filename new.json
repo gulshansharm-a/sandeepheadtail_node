@@ -1,0 +1,315 @@
+{
+    "Player": {
+      "LpYEOcaMTGSJMXvyRWWUXBhKyHz1": {
+        "balance": 9450
+      },
+      "balance": 489
+    },
+    "Tansactions": {
+      "-NlZWLj141LRYmezZnJR": {
+        "amount": "1",
+        "date_time": "2023-12-14 00:21:54",
+        "from": "user3",
+        "to": "user1"
+      },
+      "-NlZW_laJYsPzClCPUAH": {
+        "amount": "1",
+        "from": "user1",
+        "to": "admin"
+      },
+      "-NlZWcN_ZRbz4fbtrhSj": {
+        "amount": "1",
+        "date_time": "2023-12-14 00:23:06",
+        "from": "user1",
+        "to": "admin"
+      },
+      "-NlZWi3O8lsqd68-d93a": {
+        "amount": "1",
+        "date_time": "2023-12-14 00:23:30",
+        "from": "user3",
+        "to": "user1"
+      }
+    },
+    "bet": {
+      "user_a1_1": {
+        "chapa": "100",
+        "kata": "0"
+      },
+      "user_a1_2": {
+        "chapa": "0",
+        "kata": "200"
+      },"user_a1_3": {
+        "chapa": "0",
+        "kata": "200"
+      },
+      "user_a1_4": {
+        "chapa": "100",
+        "kata": "0"
+      },
+      "user_a1_5": {
+        "chapa": "0",
+        "kata": "100"
+      },
+      
+      "user_a2_1": {
+        "chapa": "200",
+        "kata": "0"
+      },
+      "user_a2_2": {
+        "chapa": "200",
+        "kata": "0"
+      },
+      "user_a2_3": {
+        "chapa": "0",
+        "kata": "100"
+      },
+      "user_a2_4": {
+        "chapa": "100",
+        "kata": "0"
+      },"user_a2_5": {
+        "chapa": "100",
+        "kata": "0"
+      },
+      "user_a3_1": {
+        "chapa": "0",
+        "kata": "500"
+      },
+      "user_a3_2": {
+        "chapa": "200",
+        "kata": "0"
+      },
+      "user_a3_3": {
+        "chapa": "300",
+        "kata": "0"
+      },
+      "user_a3_4": {
+        "chapa": "0",
+        "kata": "300"
+      },
+      "user_a3_5": {
+        "chapa": "100",
+        "kata": "0"
+      },
+      
+      "user_a4_1": {
+        "chapa": "300",
+        "kata": "0"
+      },
+      "user_a4_2": {
+        "chapa": "200",
+        "kata": "0"
+      },
+      "user_a4_3": {
+        "chapa": "100",
+        "kata": "0"
+      },
+      "user_a4_4": {
+        "chapa": "0",
+        "kata": "200"
+      },
+      "user_a4_5": {
+        "chapa": "0",
+        "kata": "100"
+      }
+    },
+    "chapa": 1000,
+    "customBet": "kata",
+    "earning": 0,
+    "earningPercentage": 10,
+    "kata": 2000,
+    "last10data": [
+      "commissionk",
+      "commissionk",
+      "commissionk",
+      "commissionc",
+      "commissionk",
+      "commissionk",
+      "commissionc",
+      "commissionc",
+      "commissionk",
+      "commissionc"
+    ],
+    "result": "chapa",
+    "standing": 0,
+    "timer": {
+      "time": 1702557420011
+    },
+    "users": {
+      "LpYEOcaMTGSJMXvyRWWUXBhKyHz1": {
+        "agent": "gulsh",
+        "balance": "1000"
+      },
+      "admin": {
+        "DateOfCreation": "2023-12-11",
+        "balance": "1030",
+        "password": "abc",
+        "pin": "123456",
+        "role": "admin"
+      },
+      "asdfasdfasdfasdf": {
+        "agent": "gulsh"
+      },
+      "gsh": {
+        "DateOfCreation": "2023-12-13",
+        "balance": "5",
+        "distributor": "user1",
+        "password": "gshsb",
+        "pin": "hahhah",
+        "role": "agent"
+      },
+      "gulsh": {
+        "DateOfCreation": "2023-12-13",
+        "balance": "12",
+        "distributor": "user1",
+        "password": "123456",
+        "pin": "123456",
+        "role": "agent"
+      },
+      "user1": {
+        "DateOfCreation": "2023-12-13",
+        "balance": "384",
+        "password": "123456",
+        "pin": "123456",
+        "role": "distributor"
+      },
+      "user2": {
+        "DateOfCreation": "2023-12-11",
+        "balance": "1000",
+        "password": "123456",
+        "pin": "123456",
+        "role": "distributor"
+      },
+      "user3": {
+        " DateOfCreation": "2023-12-11",
+        "balance": "997",
+        "distributor": "user1",
+        "password": "123456",
+        "pin": "123456",
+        "role": "agent"
+      },
+      "agent1": {
+        " DateOfCreation": "2023-12-11",
+        "balance": "997",
+        "distributor": "user1",
+        "password": "123456",
+        "pin": "123456",
+        "role": "agent"
+      },
+      "agent2": {
+        " DateOfCreation": "2023-12-11",
+        "balance": "997",
+        "distributor": "user1",
+        "password": "123456",
+        "pin": "123456",
+        "role": "agent"
+      },
+      "agent3": {
+        " DateOfCreation": "2023-12-11",
+        "balance": "997",
+        "distributor": "user1",
+        "password": "123456",
+        "pin": "123456",
+        "role": "agent"
+      },
+      "agent4": {
+        " DateOfCreation": "2023-12-11",
+        "balance": "997",
+        "distributor": "user1",
+        "password": "123456",
+        "pin": "123456",
+        "role": "agent"
+      },
+  
+  
+  
+      "user_a1_1": {
+        "agent": "agent1",
+        "balance": "1000"
+      },
+      "user_a1_2": {
+        "agent": "agent1",
+        "balance": "1000"
+      },
+      "user_a1_3": {
+        "agent": "agent1",
+        "balance": "1000"
+      },
+      "user_a1_4": {
+        "agent": "agent1",
+        "balance": "1000"
+      },
+      "user_a1_5": {
+        "agent": "agent1",
+        "balance": "1000"
+      },
+  
+  
+  
+      "user_a2_1": {
+        "agent": "agent2",
+        "balance": "1000"
+      },
+      "user_a2_2": {
+        "agent": "agent2",
+        "balance": "1000"
+      },
+      "user_a2_3": {
+        "agent": "agent2",
+        "balance": "1000"
+      },
+      "user_a2_4": {
+        "agent": "agent2",
+        "balance": "1000"
+      },
+      "user_a2_5": {
+        "agent": "agent2",
+        "balance": "1000"
+      },
+  
+  
+      "user_a3_1": {
+        "agent": "agent3",
+        "balance": "1000"
+      },
+      "user_a3_2": {
+        "agent": "agent3",
+        "balance": "1000"
+      },
+      "user_a3_3": {
+        "agent": "agent3",
+        "balance": "1000"
+      },
+      "user_a3_4": {
+        "agent": "agent3",
+        "balance": "1000"
+      },
+      "user_a3_5": {
+        "agent": "agent3",
+        "balance": "1000"
+      },
+  
+  
+  
+  
+      "user_a4_1": {
+        "agent": "agent4",
+        "balance": "1000"
+      },
+      "user_a4_2": {
+        "agent": "agent4",
+        "balance": "1000"
+      },
+      "user_a4_3": {
+        "agent": "agent4",
+        "balance": "1000"
+      },
+      "user_a4_4": {
+        "agent": "agent4",
+        "balance": "1000"
+      },
+      "user_a4_5": {
+        "agent": "agent4",
+        "balance": "1000"
+      }
+    }
+  }
