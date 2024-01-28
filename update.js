@@ -154,14 +154,11 @@ cron.schedule('*/1 * * * *', () => {
           const setTominimum = snapshot.val();
           console.log("set to minimum")
           const isSetToMinimum = setTominimum === 'chapa' || setTominimum === 'kata';
-
           if (isSetToMinimum) {
             result = setTominimum
           }
-
         });
         storeResultAndDeleteBetCollection();
-
       });
     });
   });
@@ -172,13 +169,11 @@ cron.schedule('*/1 * * * *', () => {
       snapshot.forEach(function(childSnapshot) {
         var data = childSnapshot.val();
         console.log(data);
-
       });
     })
     .catch(function(error) {
       console.error("Error fetching data:", error);
     });
-
 });
 
 function setStanding(amount) {
@@ -221,8 +216,7 @@ function storeResultAndDeleteBetCollection() {
         const agentRef = db.ref("users").child(userId);
         agentRef.once('value', (snapshot) => {
           agent_value = snapshot.child("agent").val();
-          console.log('Agent value is null for user1:', agent_value);
-
+          balance_child = parseInt( snapshot.child("balance").val());
           if (agent_value === null) {
             console.error('Agent value is null for user:', userId);
             return;
@@ -246,11 +240,18 @@ function storeResultAndDeleteBetCollection() {
             case "kata":
               profit = kata_value > 0 ? kata_value * 2 : 0;
               break;
+            case "commissionc":
+              console.log("cc "+chapa_value+ " "+earningPercentage);
+              profit = chapa_value > 0 ?chapa_value*2  -((chapa_value * (earningPercentage))) : 0;
+              break;
             case "commissionk":
-              // Handle commissionk case
+              console.log("cc "+kata_value+ " "+earningPercentage);
+
+                profit = kata_value > 0 ? kata_value*2 -((kata_value * (earningPercentage))) : 0;
               break;
           }
-
+          console.log("uska profit is "+profit +" "+ balance_child);
+          snapshot.child("balance").ref.set(balance_child+profit);
           const collection = {
             chapa: chapa_value,
             kata: kata_value,
@@ -261,6 +262,7 @@ function storeResultAndDeleteBetCollection() {
             endpoint: chapa_value + kata_value - profit,
             stime: getCurrentDateTime(),
           };
+
 
           db.ref("users").child(userId).child("gameHistory").push(collection, (error) => {
             if (error) {
@@ -395,7 +397,6 @@ const UpdateEndPointOFDistributor = async () => {
 
     await db.ref("users").update(updates);
 
-    console.log('Task completed successfully.');
   } catch (error) {
     console.error('Error:', error.message);
   }
@@ -515,82 +516,6 @@ function calculateCommission_agent(newEndpoint, currentCommission) {
   return newCommission;
   
 }
-function checkForOnlineUser() {
-  // Your task logic here
-  const currentTime = Date.now();
-
-  // Reference to the "bets" collection
-  const betsRef = db.ref('bet');
-
-  // Read all bets and perform the check
-  betsRef.once('value')
-    .then(snapshot => {
-      snapshot.forEach(betSnapshot => {
-        const betData = betSnapshot.val();
-        const betTimestamp = betData.timestamp;
-        const chapa_failed = betData.chapa;
-        const kata_failed = betData.kata;
-        if(betTimestamp == undefined) return ;
-        // Check if the bet exists and if its timestamp is more than 2 seconds old
-
-        if (betTimestamp && currentTime - betTimestamp > 3000) {
-          const userId = betSnapshot.key;
-
-          // Validate and parse values
-          let chapaValue = parseInt(chapa_failed);
-          let kataValue = parseInt(kata_failed);
-
-          // Check if parsing was successful
-          if (isNaN(chapaValue) || isNaN(kataValue)) {
-            return;
-          }
-
-          // Calculate total
-          let total = chapaValue + kataValue;
-
-          // Get the user's balance
-          db.ref('users').child(userId).once('value').then(snapshot => {
-            let balance = snapshot.child("balance").val();
-
-            // Check if balance is not null and not NaN
-            if (balance !== null && !isNaN(balance)) {
-              // Check if total is not NaN
-              if (!isNaN(total)) {
-                // Update the user's balance
-                snapshot.ref.child("balance").set(balance + total);
-                  console.log("set to bal",betTimestamp && currentTime - betTimestamp )
-              } else {
-              }
-            } else {
-            }
-          });
-
-          // Remove the user from the "bets" collection
-          betsRef.child(userId).remove()
-            .then(() => {
-              console.log(`User ${userId} removed due to an old bet.`);
-            })
-            .catch(error => {
-              console.error('Error removing user:', error);
-            });
-        }
-      });
-    })
-    .catch(error => {
-      console.error('Error reading bets:', error);
-    });
-}
-
-
-
-
-// Run the task every second indefinitely
-setInterval(() => {
-  checkForOnlineUser();
-}, 1000);
-
-
-
 
 // Start the Express server
 app.listen(port, () => {
